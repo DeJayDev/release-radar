@@ -2,8 +2,12 @@ name = "release-radar"
 main = "src/index.ts"
 compatibility_date = "2023-05-15"
 
+kv_namespaces = [
+	{ binding = "repos", id = "f46781cfa115473a823d37e3da3b299a", preview_id = "6082abf869be4d1fb2ec189456650cb2" }
+]
+
 # Cron Triggers
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
 # Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 [triggers]
-crons = ["* * * * *"] # * * * * * = run every minute
+crons = ["0 */12 * * *"] # * * * * * = run every minute
