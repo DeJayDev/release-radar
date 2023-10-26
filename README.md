@@ -11,7 +11,7 @@ Release Radar checks GitHub Repos every 12 hours (configurable with `wrangler.to
 1. Create a worker (just deploy this repo)
 2. Create this KV namespace:
    - `npx wrangler kv:namespace create repos`
-	 - `npx wrangler kv:namespace create repos --preview` (optional)
+   - `npx wrangler kv:namespace create repos --preview` (optional)
 3. Set the returned IDs appropriately `wrangler.toml`
 4. Define these secrets:
    - `npx wrangler secret put DISCORD_WEBHOOK_URL`
@@ -21,9 +21,9 @@ Release Radar checks GitHub Repos every 12 hours (configurable with `wrangler.to
 6. Add the repos you want to target with **no value**. Just the key.
 
 	 Example:
-	 	<ul>
+	 	<ul> <!--random html, i choose you!-->
 	    <li>Key: `dejaydev/release-radar`</li>
-		  <li>Value: ``</li>
+		  <li>Value: ` `</li>
 		</ul>
 5. Redeploy this repo.
 6. wait.
